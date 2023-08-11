@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de-DE">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aline Fotografie</title>
+		<link href="../css/index.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<header>
+			<div class="Logo">
+				<a href="index.html"><img src="../img/Aline Fotografie_Logo1.png" alt="Logo Alines Fotografie"></a>
+			</div>
+		</header>
+		
+
+		<main>
+			<!------Start 1° Section: Navigation----------------->
+			<section>	
+				<nav>
+					<ul class="navigation">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="UeberMich.html">Über mich</a></li>
+						<li><a href="Portrait.html">Portrait</a></li>
+						<li><a href="#">Hochzeit</a></li>
+						<li><a href="#">Familie</a></li>
+						<li><a href="Tierfotografie.html">Tierfotografie</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</nav>				
+			</section>
+
+			<!-------Start 2° Section: Article mit Galerie----------------->
+
+			<section class="Galerie">	
+				<div class="innerWrapGalerie"> 					
+					</article>
+							<article>
+						<figure class="figcaption">
+							<img class="bild1" src="../img/Hochzeit am Strand in Brasilien.jpg" alt="Hochzeit am Strand">
+						</figure>
+						<p></p>
+					</article>
+
+					<article>
+						<figure class="figcaption">
+							<img class="bild2" src="../img/IMG_6211.JPG" alt="Portrait Frau im Park Herbst">
+						</figure>
+						<p></p>
+					</article>
+
+					<article>
+						<figure class="figcaption">
+							<img class="bild3" src="../img/junge mit Katzen.JPG" alt="lachendes Baby Junge">
+						</figure>
+						<p></p>
+					</article>
+				
+				</div>	
+			</section>
+			
+			<!-------Start 3° Section: Willkommen & Zitate ----------------->
+			
+			<section class="Willkommen">
+				<div class="innerWrapMe">
+					<article class="LinksFotoMe">
+						<figure>
+							<img src="../img/Aline mit Kamera.jpg" alt="Person mit Kamera">
+						</figure>
+					</article>
+
+					<article class="RechtsText">
+						<h1>
+							<p class="willkommen">Willkommen</p>
+						</h1>
+							
+							<p>Ich bin Aline</p>
+							<p>Fotografin aus Darmstadt für die Region Frankfurt, Rhein-Main</p>								
+							<p>Möchtest du die schönsten Momente im Leben in wunderschönen Fotos für immer festhalten? Dann bist du bei mir genau richtig!</p>
+						<br>
+						
+						<h2>
+						    <p>
+							   <blockquote class="Zitate">
+							   "Was ich an Fotos mag, ist, dass sie einen Moment festhalten, der für immer weg ist und den man unmöglich reproduzieren kann"									    </blockquote>
+							   </blockquote>
+							   
+						       <blockquote class="Lagerfeld">
+								Karl Lagerfeld
+							   </blockquote> 
+							</p>
+						</h2>
+					</article>
+				</div>
+			</section>
+
+			<!-------Start 4° Section: Buchungsanfrage ----------------->
+
+			<section class="Buchungsanfrage">
+
+				<div class="InnerWrapBuchungsanfrage">
+                	<article>
+						<form class="formular" method="post" action="email@gmail.com">
+							<p><h1 class="titleBuchungsanfrage">Buchungsanfrage</h1></p>
+				
+							<p>
+								<h5>
+									Mithilfe dieses Fragebogens möchte ich einige Dinge von Ihnen erfahren, die für das Fotoshooting wichtig sind. Mit diesen Infos kann ich besser planen und auf Ihre Ansprüche abstimmen.
+								</h5>
+							</p>
+							
+						<fieldset>
+				
+							<legend>
+								Ihre persönlichen Daten
+							</legend>
+				
+							<p>
+								<label class="pflicht" for="vorname">Vorname</label>
+								<input type="text" id="vorname" required>
+							</p>
+						
+							<p>
+								<label class="pflicht" for="name">Name</label>
+								<input type="text" id="name" required>
+							</p>
+				
+							<p>
+								<label class="pflicht" for="email">Email</label>
+								<input type="text" id="email" required>
+							</p>
+				
+							<p>
+								<label for="telefonnummer ">Telefonnummer </label>
+								<input type="text" id="Telefonnummer">
+							</p>
+				
+						</fieldset>
+				
+										
+							<fieldset>
+				
+								<legend> Interesse an folgendem Fotoshooting:</legend>
+							   
+								 <p>
+									<input type="checkbox" id="fotoshooting1" name="fotoshooting1" value="Portrait">
+									<label for="fotoshooting1">Portrait</label><br>
+								 </p>
+				
+								 <p>
+									<input type="checkbox" id="fotoshooting2" name="fotoshooting2" value="Hochzeit">
+									<label for="fotoshooting1">Hochzeit</label><br>
+								 </p>
+				
+								 <p>
+									<input type="checkbox" id="fotoshooting1" name="fotoshooting1" value="Familie">
+									<label for="fotoshooting1">Familie</label><br>
+								 </p>
+				
+								 <p>
+									<input type="checkbox" id="fotoshooting1" name="fotoshooting1" value="Babybauch">
+									<label for="fotoshooting1">Babybauch</label><br>
+								 </p>
+				
+								 <p>
+									<input type="checkbox" id="fotoshooting1" name="fotoshooting1" value="Tierfotografie">
+									<label for="fotoshooting1">Tierfotografie</label><br>
+								 </p>	
+								 
+								 <p>
+									<legend>Personenanzahl</legend>
+									<textarea name="personenanzahl" id="personenanzahl" cols="30" rows="01"></textarea>
+								 </p>
+				
+								 <p>
+									<legend>Wunschlocation</legend>
+									<textarea name="wunschlocation" id="wunschlocation" cols="30" rows="01"></textarea>
+								 </p>
+				
+								 <p>
+									<legend>Gewünschtes Datum</legend>
+									<input type="datetime" min="2000-01-02" max="2024-12-31">
+								 </p>
+				
+								 <p>
+									<legend>Anmerkungen | Nachricht </legend>
+									<textarea name="nachricht" id="nachricht" cols="70" rows="10"></textarea>
+								 </p>
+							
+							</fieldset>
+				
+							<p>Es gilt die <a href="datenschutz.html">Datenschutzerklärung</a></p>
+						
+				
+							<p>
+								<input type="submit" value="Senden">
+								
+							</p>
+						</form>
+					</article>
+
+				</div>
+
+			</section>	
+
+		</main>	
+			
+             <!-------Ende Main | Start FooterNavigation ----------------->
+
+			 <footer>
+				<nav>
+					<ul class="footerNavigation">
+						<li> <a href="#">Impressum</a></li>
+						<li> <a href="#">Datenschutz</a></li>
+						<li> <a href="#">Social Media</a></li>
+						<li> <a href="#">AGB</a></li>
+					</ul>
+				</nav>
+			</footer>       
+
+	</body>
+
+
+
+</html>
+

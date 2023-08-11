@@ -1,0 +1,310 @@
+ 
+/* -------------Verbindung von Font mit CSS------------------*/
+@font-face {
+    font-family: "OleoScript-Bold";
+    font-weight: 400;
+    src: url(../fonts/OleoScript-Bold.ttf)
+}
+
+/* -------------LOGO im Header------------------*/
+
+header {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.Logo img {
+    width: auto;
+    height: auto;
+}
+   
+/* --------Background der ganzen Seite - Body------------------*/
+
+body {
+    background-color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(1rem, -0.125rem + 5vw, 1rem);
+    line-height: 1.5;
+    padding: 0px  /* ---Abstand zwieschen Rahmen und Body/Viewport ---*/
+    
+}
+
+/* ------------- Eigenschaft für alle Sections>------------------*/
+
+section {
+    background-color: rgb(238, 227, 227);
+    border: 4px;
+    padding: 1px;
+    margin-top: 0cm ;   /* ---margin-top:Abstand zwischen Sections---*/
+}
+
+img {
+    max-width: 100%;   /* ----Eigenschaft für alle Sections----*/
+    height: auto;  
+ 
+}
+
+/* --------Eigenschaft für alle <figure class="figcaption"---------*/
+
+.figcaption img {
+    width: 100%;    
+    object-fit: cover;
+    height: 300px;
+    
+}
+
+/*---Eigenschaft für alle Sections, mit Elemente "DIV"------------------*/
+
+section div {
+    margin-bottom: 20px; /*Abstand zwischen Nachbarelementen > zwischen Sections*/ 
+    background-color:white;
+    border: 2px;
+    padding: 10px; /*innenAbstand*/ /*der Elemente in innerWrap*/  
+       
+}
+
+
+div.footer {
+    margin-bottom: 20px; /*Abstand zwischen Nachbarelementen > zwischen Sections*/ 
+    background-color:white;
+    border: 2px;
+    padding: 0px; /*innenAbstand*/ /*der Elemente in innerWrap*/  
+
+}
+
+/* ------------- Eigenschaft für alle ul------------------*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- Start Navigation------------------*/
+
+.navigation {
+    display: flex;
+}
+
+.navigation > li{
+    flex: 1;
+    height: auto;
+    background-color: none;
+}
+
+.navigation >li a:link, .navigation>li A:visited {
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation >li a:hover, .navigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* ------------- Ende Navigation --------------------*/
+
+main {
+    height: 2600px;
+}
+   
+/*------- Animation SlideShow Galerie----------------*/
+
+/*
+@keyframes blenden {
+    0% {opacity: 1}
+    23% {opacity: 0}
+    97% {opacity: 1}
+    100% {opacity: 1}
+  }
+
+.innerWrapGalerie {
+    position: relative;
+    width:50%
+  }
+
+.innerWrapGalerie img {
+    position:absolute;
+    width:50%;
+}
+
+  .bild1 {
+    animation: blenden 20s infinite;
+  }
+
+  .bild2 {
+    animation: blenden 20s 8s infinite;
+  }
+
+  .bild3 {
+    animation: blenden 20s 12s infinite;
+  }
+  
+  */
+
+/*-------Start 1° Section: Article mit Galerie----------------*/
+
+.innerWrapGalerie {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;         
+}
+
+.innerWrapGalerie .figcaption {
+    color: rgb(113, 106, 106);
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif 
+}
+
+
+/*-------Start 2° Section: Willkommen, Ich & Zitate ----------------*/
+
+.innerWrapMe { 
+    display: flex;
+}
+
+.innerWrapMe .LinksFotoMe { /*article class=LinksFotoMe*/
+    flex: 1;
+    max-width: 120%;
+    height: auto;
+}
+
+.innerWrapMe .RechtsText {  /*article class=RechtsText*/
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: grey;
+    line-height: 2;
+}
+
+.willkommen {
+    font-size: 30px;
+    line-height: 34px;
+    color: rgb(156, 153, 153);
+}
+
+.innerWrapMe .Zitate { /*blockquote class=Zitate*/
+   color: rgb(128, 128, 128);
+}
+
+.innerWrapMe .Lagerfeld {
+    color: grey;
+ }
+    
+
+/*-------Start 3° Section: FORMULAR | Buchungsanfrage--------*/
+ 
+.titleBuchungsanfrage {
+    text-align: center;
+    font-size: 30px;
+    line-height: 34px;
+    color: rgb(156, 153, 153);
+}
+
+.InnerWrapBuchungsanfrage {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif; /*Font aller Titel der Angabe (Vorname, Name usw.)*/
+    font-style: oblique;
+    color: grey;
+    text-align: left;
+    line-height: 2;
+    margin:%;
+    background-color: white;
+    padding: 180px;
+   
+}
+
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    margin-left: 0px;
+    background-color: white;
+    border-width: 0 0 1px; /*Linha onde se insere o nome, tel, email*/
+    border-color: rgb(212, 207, 207);
+
+}
+
+a {
+    color: grey;
+    text-decoration: underline; /*Link zur Datenschutzerklärung*/
+}
+
+a:hover {
+    text-decoration: underline;  /*Link zur Datenschutzerklärung*/
+}
+
+
+
+/* ---------Eigenschaft für Button------------------*/
+input[type="submit"] {
+    color:white;
+    background-color:rgb(214, 188, 188);
+    border:none;
+    padding:10px; /*Button*/
+}
+
+/*Legend ist der Titel in der Rahmen "Ihre persönlichen*/
+legend { 
+    margin-left:15px;
+  
+}
+
+textarea {
+    width: auto; /*textarea | Nachricht oder Anmerkungen/
+    height: auto;
+}
+
+
+fieldset {
+    border: 0.5px; /*Grossura da borda em volta do Formulario*/
+    border-style: solid; /*Estilo da borda em volta do Formulario*/
+    border-color: rgb(216, 216, 216);
+}
+
+.pflicht::before {
+    content:"*";
+    padding-right: 7px;
+    color: rgb(69, 64, 64);
+};
+
+
+/* ------------- Footer--------------------*/
+
+.footerNavigation {
+    display:flex;
+}
+
+.footerNavigation > li {
+    flex: 1;
+    height: auto;
+    background-color: rgb(238, 227, 227);
+}
+
+.footerNavigation > li a:link, .footerNavigation >li a:visited {
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerNavigation >li a:hover, .footerNavigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
+

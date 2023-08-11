@@ -1,0 +1,202 @@
+
+
+/* -------------LOGO im Header------------------*/
+
+header  {
+    
+    display: flex;
+    justify-content: center;
+}
+
+ 
+/* --------Background der ganzen Seite - Body------------------*/
+
+
+body {
+    background-color:white;
+}
+
+
+/* ------------- Eigenschaft für alle Sections>------------------*/
+
+section {
+    background-color: rgb(238, 227, 227);
+    border: 4px;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+/* --------Eigenschaft für alle <figure class="figcaption"---------*/
+
+.figcaption img {
+    width: 100%;    
+    object-fit: cover;
+    height: 400px;
+   
+}
+
+
+/*---Eigenschaft für alle Sections, mit "DIV"------------------*/
+
+section div {
+    margin-bottom: 20px; /*Abstand zwischen Nachbarelementen > zwischen Sections*/ 
+    background-color:white;
+    border: 2px;
+    padding: 30px;; /*innenAbstand*/ /*der Elemente in innerWrap*/     
+}
+
+
+/* ------------- Start Navigation------------------*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation > li{
+    flex: 1;
+    height: auto;
+    background-color: none;
+}
+
+.navigation >li a:link, .navigation>li A:visited{
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation >li a:hover, .navigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* ------------- Ende Navigation --------------------*/
+
+
+/* ------------- Main --------------------*/
+
+
+   
+/* ------------- Main --------------------*/
+
+
+/*-------Section 2 & 4: Article mit Galerie Portrait----------------*/
+
+.innerWrap_Portraits_carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;         
+    background-position: center;
+    
+
+    
+}
+
+.innerWrap_Portraits_carouseldiv {
+    display: flex;
+    align-items: center;
+    width: auto;
+     
+}
+
+
+/*-------Start 3° Section: Infos Portrait Fotoshooting----------------*/
+
+
+.innerWrapPortrait { 
+    display: flex;
+    
+}
+
+.innerWrapPortrait .LinksTextPortrait { /*article class=LinksFotoMe*/
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: grey;
+    line-height: 2;
+}
+
+.innerWrapPortrait .RechtsFotoPortrait {  /*article class=RechtsText*/
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+    
+/* ------------- Footer Start --------------------*/
+
+.footerNavigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavigation>li {
+    flex: 1;
+    height: auto;
+    background-color: rgb(238, 227, 227);    
+}
+
+
+.footerNavigation >li a:link, .footerNavigation>li A:visited{
+    display: flex;
+    color: rgb(98, 97, 97);
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerNavigation >li a:hover, .footerNavigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* --------------breakpoint der Seite ab 660px------------- */
+
+/*
+@media (min-width:550px) {
+    .innerWrap_Portraits_carousel {
+        flex-direction: row;
+    }
+}
+
+*/
+
+
+/* --------------breakpoint 2 Navis ab 660px------------- */
+
+@media (min-width:550px) {
+    .navigation {
+        flex-direction: row;
+    }
+    
+    }
+
+@media (min-width:550px) {
+    .footerNavigation {
+        flex-direction: row;
+    }
+        
+        }

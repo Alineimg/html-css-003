@@ -1,0 +1,162 @@
+
+/* -------------LOGO im Header------------------*/
+
+header  {
+    
+    display: flex;
+    justify-content: center;
+}
+
+ 
+/* --------Background der ganzen Seite - Body------------------*/
+
+
+body {
+    background-color:white;
+}
+
+
+/* ------------- Eigenschaft für alle Sections>------------------*/
+
+section {
+    background-color: rgb(238, 227, 227);
+    border: 4px;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*---Eigenschaft für alle Sections, Elemente die "DIV" heißen>------------------*/
+
+section div {
+    margin-bottom: 20px; /*Abstand zwischen Nachbarelementen > zwischen Sections*/ 
+    background-color:white;
+    border: 2px;
+    padding: 30px;; /*innenAbstand*/ /*der Elemente in innerWrap*/     
+}
+
+/* ------------- Eigenschaft für alle ul------------------*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- Start Navigation------------------*/
+
+.navigation {
+    display: flex;
+}
+
+.navigation > li{
+    flex: 1;
+    height: auto;
+    background-color: none;
+}
+
+.navigation >li a:link, .navigation>li A:visited{
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation >li a:hover, .navigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* ------------- Ende Navigation --------------------*/
+
+main {
+    height: 2500px;
+}
+
+
+/*-------Start Section 2: Über Mich ----------------->*/
+
+
+.innerWrapMe { 
+    display: flex;
+}
+
+.innerWrapMe .LinksFotoMe { /*article class=LinksFotoMe*/
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.innerWrapMe .RechtsText {  /*article class=RechtsText*/
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: grey;
+    line-height: 2;
+}
+
+/*-------------Start 4° Section: Kundenrezension------------*/
+
+.innerWrapKundenrezension {
+    display: flex;
+
+}
+
+/*------------- Kundenrezension 1------------*/
+
+.innerWrapKundenrezension .LinksFotoKunde{
+    flex: 1;
+    max-width: 30%;
+    height: auto;
+}
+.innerWrapKundenrezension .RechtsText {  /*article class=RechtsText*/
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: grey;
+    line-height: 2;
+}
+
+
+    
+/* ------------- Footer Start --------------------*/
+
+.footerNavigation {
+    display: flex;
+   
+}
+
+.footerNavigation>li {
+    background-color: rgb(238, 227, 227);
+    flex: 1;
+    height: 30px;
+    width: auto;
+    text-align: center;
+    
+}
+
+
+.footerNavigation >li a:link, .footerNavigation>li A:visited{
+    display: flex;
+    color: rgb(98, 97, 97);
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerNavigation >li a:hover, .footerNavigation >li a:focus{
+    text-decoration: underline;
+    font-size: 18px;
+}
